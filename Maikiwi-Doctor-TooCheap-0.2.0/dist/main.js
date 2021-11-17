@@ -5,7 +5,7 @@ var fs = require("fs")
 const resolve_path = internal.path.resolve;
 
 function fetch_flea_prices() {
-    fetch('https://raw.githubusercontent.com/maikirakiwi/aetoocheap/resources/flea.json').then(response=>{
+    fetch('https://raw.githubusercontent.com/maikirakiwi/aetoocheap/main/Maikiwi-Doctor-TooCheap-0.2.0/resources/flea.json').then(response=>{
         response.json().then(data=>{
          fs.writeFileSync("../resources/flea.json", JSON.stringify(data))
         })
