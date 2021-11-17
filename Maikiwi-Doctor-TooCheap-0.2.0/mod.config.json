@@ -1,0 +1,9 @@
+{
+    "name": "TooCheap",
+    "author": "Maikiwi-Doctor",
+    "version": "0.2.0",
+    "license": "MIT",
+    "src": {
+        "dist/main.js": "CacheModLoad"
+    }
+}

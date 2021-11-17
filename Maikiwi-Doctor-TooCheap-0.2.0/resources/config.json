@@ -1,0 +1,5 @@
+{
+    "min_price": 100,
+    "update_flea_prices": true,
+    "update_trader_prices": true
+}
