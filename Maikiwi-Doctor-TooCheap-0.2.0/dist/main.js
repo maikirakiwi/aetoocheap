@@ -1,16 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//var fetch = require('node-fetch');
 var fs = require("fs")
 // @ts-ignore
 const resolve_path = internal.path.resolve;
 
-function fetch_flea_prices() {
-    fetch('https://raw.githubusercontent.com/maikirakiwi/aetoocheap/main/Maikiwi-Doctor-TooCheap-0.2.0/resources/flea.json').then(response=>{
-        response.json().then(data=>{
-         fs.writeFileSync("../resources/flea.json", JSON.stringify(data))
-        })
-       })
-}
+//function fetch_flea_prices() {
+    //fetch('https://raw.githubusercontent.com/maikirakiwi/aetoocheap/main/Maikiwi-Doctor-TooCheap-0.2.0/resources/flea.json').then(response=>{
+        //response.json().then(data=>{
+      //   fs.writeFileSync("../resources/flea.json", JSON.stringify(data))
+    //    })
+  //     })
+//}
 
 function update_trader_prices(flea_prices) {
     const db = fileIO.readParsed(resolve_path('user/cache/items.json'));
@@ -33,8 +34,8 @@ function update_flea_prices(flea_prices) {
     fileIO.write(resolve_path('user/cache/templates.json'), db, true);
 }
 exports.mod = (mod_info) => {
-    fetch_flea_prices();
-    logger.logSuccess("[AETooCheap] Synchronized Live Flea Market Prices");
+    //  fetch_flea_prices();
+    //logger.logSuccess("[AETooCheap] Synchronized Live Flea Market Prices");
     let flea_prices = new Map(Object.entries(require('../resources/flea.json')));
     const ids_blacklist = new Set(require('../resources/blacklist.json'));
     const mod_config = require("../resources/config.json");
