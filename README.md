@@ -1,7 +1,7 @@
 # TooCheap Mod for Altered Escape
 (Totally Semantic Versioning) 0.2.0 to differentiate between original TooCheap Mod.
 
-Real-Time (~10 minutes delay) Flea Market Prices!
+Real-Time ish (~30 minutes delay) Flea Market Prices!
 
 The prices are divided by 2 so they can live with the native 2x ragfair multiplier of AE and the AE added items in harmony.
 
