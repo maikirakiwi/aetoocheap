@@ -1,5 +1,7 @@
 {
     "min_price": 100,
+    "show_debug_messages": true,
     "update_flea_prices": true,
-    "update_trader_prices": true
+    "update_trader_prices": true,
+    "update_interval_minutes": 10
 }
